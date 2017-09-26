@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+          <!-- XML Schema Generated from XML Document on Mon Jun 12 2017 18:37:52 GMT+0800 (China Standard Time) -->
+          <!-- with XmlGrid.net Free Online Service http://xmlgrid.net -->
+       <xs:element name="calcgroup">
+              <xs:complexType>
+                     <xs:sequence>
+                            <xs:element name="rule" maxOccurs="unbounded">
+                                   <xs:complexType>
+                                          <xs:sequence>
+                                                 <xs:element name="conditionset" maxOccurs="unbounded">
+                                                        <xs:complexType>
+                                                               <xs:sequence>
+                                                                      <xs:element name="parameter" maxOccurs="unbounded">
+                                                                             <xs:complexType>
+                                                                                    <xs:sequence>
+                                                                                 	       <xs:element name="name" type="xs:string"></xs:element>
+                                                                                 	       <xs:element name="value" type="xs:int"></xs:element>
+                                                                                    </xs:sequence>
+                                                                             </xs:complexType>
+                                                                      </xs:element>
+                                                                      <xs:element name="condition">
+                                                                             <xs:complexType>
+                                                                                    <xs:sequence>
+                                                                                           <xs:element name="parameter" maxOccurs="unbounded">
+                                                                             		              <xs:complexType>
+                                                                                   	                     <xs:sequence>
+                                                                                 	                            <xs:element name="name" type="xs:string"></xs:element>
+                                                                                 	                            <xs:element name="value" type="xs:int"></xs:element>
+                                                                                                         </xs:sequence>
+                                                                             		              </xs:complexType>
+                                                                      		               </xs:element>
+                                                                                    </xs:sequence>
+                                                                                    <xs:attribute name="class" type="xs:string"></xs:attribute>
+                                                                                    <xs:attribute name="description" type="xs:string"></xs:attribute>
+                                                                                    <xs:attribute name="name" type="xs:string"></xs:attribute>
+                                                                                    <xs:attribute name="negate" type="xs:string"></xs:attribute>
+                                                                             </xs:complexType>
+                                                                      </xs:element>
+                                                               </xs:sequence>
+                                                               <xs:attribute name="description" type="xs:string"></xs:attribute>
+                                                               <xs:attribute name="negate" type="xs:string"></xs:attribute>
+                                                        </xs:complexType>
+                                                 </xs:element>
+                                          </xs:sequence>
+                                          <xs:attribute name="class" type="xs:string"></xs:attribute>
+                                          <xs:attribute name="description" type="xs:string"></xs:attribute>
+                                          <xs:attribute name="executionPoint" type="xs:int"></xs:attribute>
+                                          <xs:attribute name="isActive" type="xs:string"></xs:attribute>
+                                          <xs:attribute name="name" type="xs:string"></xs:attribute>
+                                          <xs:attribute name="overriddenConditionSetExecIsME" type="xs:string"></xs:attribute>
+                                          <xs:attribute name="overrideConditionSetExecIsME" type="xs:string"></xs:attribute>
+                                   </xs:complexType>
+                            </xs:element>
+                     </xs:sequence>
+                     <xs:attribute name="autoRecalc" type="xs:int"></xs:attribute>
+                     <xs:attribute name="calcPeriod" type="xs:int"></xs:attribute>
+                     <xs:attribute name="description" type="xs:string"></xs:attribute>
+                     <xs:attribute name="name" type="xs:string"></xs:attribute>
+              </xs:complexType>
+       </xs:element>
+</xs:schema>
